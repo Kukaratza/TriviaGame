@@ -1,9 +1,13 @@
 //Pseudocode
-var library;
+
 /* in qanda.js */
-//Create an object array with all the questions and answers 
+//Create an object array with all the questions and answers [done!]
+
 
 /* in app.js */
+
+//Global variables.... for now
+//var randQuestion;
 
 // Create a timer that starts a 60 secs and goes down to zero. 
 function stopWatch() {
@@ -21,15 +25,24 @@ function stopWatch() {
     }
 }
 
-// Create a for-loop that picks a random question from the array [library] 
-function foo() {
-    var randQuestion = library[Math.floor(Math.random() * library.length)];
+
+// create a function that randomizes and inserts QAs to the id questions and answers
+
+function addQAs() {
+    var randQuestion = Math.floor(Math.random() * library.length); //this is a nuber, dont forget!
     console.log(randQuestion);
+    $("#question").html(library[randQuestion].question);
+    $("#answer1").html(library[randQuestion].answer[0]);
+    $("#answer2").html(library[randQuestion].answer[1]);
+    $("#answer3").html(library[randQuestion].answer[2]);
 }
 
-// Append that random number(question) to the <div>Question1</div>
-// Append the 3 Answers corresponding to the question selected to id=answer1, id=answer2, id=answer3.
 // create an onClick event that uses the :checked selector url("https://api.jquery.com/checked-selector/"). 
+
+$("input").on("click", function () {
+    $( "#log" ).html( $( "input:checked" ).val() + " is checked!" );
+  })
+
 // verify is the clickedAnswer === correctAnswer.
 //all this is if(answer[i] === clickAnswer)
 // var clickAnswer,
@@ -43,7 +56,7 @@ function foo() {
 
 function startGame() {
     stopWatch();
-    foo();
+    addQAs();
 }
 
 

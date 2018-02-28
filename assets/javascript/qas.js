@@ -1,9 +1,10 @@
-//Library for all questions and answers
+
+//Library array for all questions and answers
 
 var library = [
     { //library[0]
-        question: "Question 1",
-        answer: ["answer 1", "answer2", "answer3"],
+        question: "waht color is the sky",
+        answer: ["red", "yellow", "blue"],
         correctIndex: 2,
     }, { //library[1]
         question: "Question 2",
@@ -25,7 +26,7 @@ var library = [
         question: "Question 6",
         answer: ["answer 1", "answer2", "answer3"],
         correct: 1,
-    }
+    }   
 ]
 
 

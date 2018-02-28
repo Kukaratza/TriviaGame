@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        
+
 </head>
 
 <body>
@@ -26,8 +26,8 @@
     </div>
 
     <div>Incorrect Answers:
-            <span id="incorrect"></span>
-        </div>
+        <span id="incorrect"></span>
+    </div>
 
     <div>Wins:
         <span id="wins"></span>
@@ -37,25 +37,29 @@
         <span id="loses"></span>
     </div>
 
+    <form>
+        <div>
+            <span id="question"></span>
+        </div>
 
-    <div>
-        <span id="question">Question 1</span>
-    </div>
-
-    <div>
-        <input type="radio" id="answer1" value="answer1">
-        <label for="answer1">Answer1</label>
-
-        <input type="radio" id="answer1" value="answer2">
-        <label for="answer2">Answer2</label>
-
-        <input type="radio" id="answer1" value="answer3">
-        <label for="answer3">Answer3</label>
-    </div>
+        <div>
+            <input type="radio" class="radioB" id="answer1" value="answer1">
+            <label for="answer1"></label>
+        </div>
+        <div>
+            <input type="radio" class="radioB" id="answer2" value="answer2">
+            <label for="answer2"></label>
+        </div>
+        <div>
+            <input type="radio" class="radioB" id="answer3" value="answer3">
+            <label for="answer3"></label>
+        </div>
+        <div id="log"></div>
+    </form>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/qas.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script type="text/javascript" src="assets/javascript/qanda.js"></script>
 </body>
 
 </html>

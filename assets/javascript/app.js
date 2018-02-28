@@ -40,7 +40,7 @@ function addQAs() {
 // create an onClick event that uses the :checked selector url("https://api.jquery.com/checked-selector/"). 
 
 $("input").on("click", function () {
-    $( "#log" ).html( $( "input:checked" ).val() + " is checked!" );
+    $("#log").html( $("input:checked").val() + " is checked!"); //sanity check, works!
   })
 
 // verify is the clickedAnswer === correctAnswer.

@@ -8,10 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
+
+   
 
     <div>
         <h1 id="title">Totally Trivia Game</h1>
@@ -29,28 +32,30 @@
         <span id="incorrect"></span>
     </div>
 
-    
-        <div>
-            <span id="question"></span>
-        </div>
+
+    <div>
+        <span id="question"></span>
+    </div>
 
 
-        <!-- By adding a name caterogy to the radio buttons, it puts them 
+    <!-- By adding a name caterogy to the radio buttons, it puts them 
             into the same group so ONLY 1 button can be clicked at the time-->
-        <div> 
-            <input type="radio" id="answer1" value="answer1" index="0" name="gp1">
-            <label for="answer1"></label>
-        </div>
-        <div>
-            <input type="radio" id="answer2" value="answer2" index="1" name="gp1">
-            <label for="answer2"></label>
-        </div>
-        <div>
-            <input type="radio" id="answer3" value="answer3" index="2" name="gp1">
-            <label for="answer3"></label>
-        </div>
-        <div><button type="reset" style="display: none;" value="Reset" id="reset">Reset</button></div>
-    
+    <div>
+        <input type="radio" id="answer1" value="answer1" index="0" name="gp1">
+        <label for="answer1"></label>
+    </div>
+    <div>
+        <input type="radio" id="answer2" value="answer2" index="1" name="gp1">
+        <label for="answer2"></label>
+    </div>
+    <div>
+        <input type="radio" id="answer3" value="answer3" index="2" name="gp1">
+        <label for="answer3"></label>
+    </div>
+    <div>
+        <button type="reset" style="display: none;" value="Reset" id="reset">Reset</button>
+    </div>
+
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/qas.js"></script>

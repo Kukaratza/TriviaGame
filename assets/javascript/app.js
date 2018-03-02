@@ -28,7 +28,7 @@ function startGame() {
 
 // Create a timer that starts a 60 secs and goes down to zero. 
 function stopWatch() {
-    var count = 5;
+    var count = 61;
     var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
     function timer() {
         count = count - 1;
@@ -63,8 +63,7 @@ function enableClicks() {
         var foo = $("input:checked").attr("index");
         clickAns.click = parseInt(foo);
         clickAns.right = library[randQuestion].correctIndex;
-        // checkAnswer();
-        console.log(clickAns);
+        library.splice(randQuestion, 1);
         checkAnswer();
         swithQuestion();
     });  
@@ -100,4 +99,12 @@ $("#reset").on("click", function () {
         startGame();
 });
 
+  
+
+// need to work on this.
+//    if ((correctAnswer + wrongAnswer) === 30) {
+//         alert("game over")
+//     };
+
 startGame();
+

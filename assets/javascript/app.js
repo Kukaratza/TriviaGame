@@ -25,25 +25,27 @@ function startGame() {
     $("#incorrect").text("0");
     correctAnswer = 0;
     wrongAnswer = 0;
-    count = 61;
 }
 
 // Create a timer that starts a 60 secs and goes down to zero. 
 function stopWatch() {
     count = 61;
-    var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+    counter = setInterval(timer, 1000); //1000 will  run it every 1 second
     function timer() {
         count = count - 1;
-        if (count < 0) {
-            clearInterval(counter);
+        if (count === 0) {
             $('#answer1').off();
             $('#answer2').off();
             $('#answer3').off();
             showButton();
-            return;
+            stopTimer();
         }
         document.getElementById("timeR").innerHTML = count;
     }
+}
+
+function stopTimer() {
+    clearInterval(counter);
 }
 
 // create a function that randomizes and inserts QAs to the id questions and answers
@@ -58,15 +60,16 @@ function addQAs() {
 
 // create an onClick event that uses the :checked selector url("https://api.jquery.com/checked-selector/"). 
 function enableClicks() {
-    $("button").on("click", function () {
-       $("#log").html($("input:checked").val() + " is checked!"); //sanity check, works!
-        var foo = $("input:selected").attr("index");
+    $("input").on("click", function () {
+        $("#log").html($("input:checked").val() + " is checked!"); //sanity check, works!
+        var foo = $("input:checked").attr("index");
         clickAns.click = parseInt(foo);
         clickAns.right = library[randQuestion].correctIndex;
         library.splice(randQuestion, 1);
         checkAnswer();
         swithQuestion();
-    });  
+        console.log(clickAns);
+    });
 }
 
 
@@ -96,7 +99,8 @@ function showButton() {
 }
 
 $("#reset").on("click", function () {
-        startGame();
+    stopTimer();
+    startGame();
 });
 
 // need to work on this.
@@ -108,8 +112,8 @@ jQuery(':button').click(function () {
     if (this.id == 'answer1') {
         alert('Button 1 was clicked');
     }
-  
-    
+
+
 });
 
 startGame();

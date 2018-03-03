@@ -8,9 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" id="questionMargin">
         <div class="row">
             <div class="col">
                 <span id="question"></span>
@@ -46,7 +47,7 @@
     <!-- By adding a name caterogy to the radio buttons, it puts them 
             into the same group so ONLY 1 button can be clicked at the time-->
     <div class="container-fluid text-center">
-        <form>
+        <form id="x">
             <div class="row">
                 <div class="col-4" id="answer1_1">
                     <input type="radio" id="answer1" value="answer1" index="0" name="gp1">
@@ -71,6 +72,8 @@
             </div>
         </div>
     </div>
+
+    <div id="log"></div>
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -24,7 +24,7 @@ var library = [
         correctIndex: 1,
     }, { //library[5]
         question: "How much was Dobby paid a month in the Hogwarts kitchen?",
-        answer: ["1 Knut", "One Galleon", "17 sickles"],
+        answer: ["1 sickle", "One Galleon", "17 sickles"],
         correctIndex: 1,
     }, { //library[6]
         question: "What is Dumbledore's sister's name?",
@@ -36,7 +36,7 @@ var library = [
         correctIndex: 0,
     }, { //library[9]
         question: "What did Dumbledore leave in his will for Ron?",
-        answer: ["Gryffindor's Sword", "Deluminator", "A book"],
+        answer: ["Gryffindor's Sword", "Deluminator", "A Book"],
         correctIndex: 1,
     }, { //library[10]
         question: "Who was the half-blood prince?",
@@ -44,15 +44,15 @@ var library = [
         correctIndex: 2,
     }, { //library[11]
         question: "What fruit must you tickle to get into the Hogwarts kitchen?",
-        answer: ["pear", "orange", "grape"],
+        answer: ["A Pear", "An Orange", "A Grape"],
         correctIndex: 0,
     }, { //library[12]
         question: "What shape does Harry's patronus take?",
-        answer: ["duck", "stag", "moose"],
+        answer: ["A Duck", "A Stag", "A Moose"],
         correctIndex: 1,
     },{ //library[13]
         question: "Where did Fleur and Bill meet?",
-        answer: ["at the Wesley's House", "Hogwarts", "Gringotts Wizarding Bank"],
+        answer: ["At the Wesley's House", "Hogwarts", "Gringotts Wizarding Bank"],
         correctIndex: 2,
     }, { //library[14]
         question: "What was the former name of Lord Voldemort?",
@@ -80,11 +80,11 @@ var library = [
         correctIndex: 2,
     }, { //library[20]
         question: "What is the last name of the three brothers who origanally owned the Deathly Hallows?",
-        answer: ["Peverell", "Percevell", "Malvoro"],
+        answer: ["Peverell", "Garcia", "Malvoro"],
         correctIndex: 0,
     }, { //library[21]
         question: "What is the term used for bodies bewitched to do as a Dark wizard bids?",
-        answer: ["Hollows", "Inferi", "Deaders"],
+        answer: ["Hollows", "Inferi", "Deathers"],
         correctIndex: 1,
     }, { //library[22]
         question: "What is the name of the landlord of the Leaky Cauldrons?",
@@ -99,12 +99,12 @@ var library = [
         answer: ["Hufflepuff", "Ravenclaw", "Gryffindor"],
         correctIndex: 1,
     }, { //library[25]
-        question: "What number is Harry's vault at the Gringotts Wizarding Bank?",
-        answer: ["454", "312", "687"],
+        question: "Which was the first broom that Harry received as a gift?",
+        answer: ["Nimbus 2001", "CleanSweeper", "Nimbus 2000"],
         correctIndexIndex: 2,
     }, { //library[26]
         question: "What patronus does Luna Lovegood has?",
-        answer: ["Rabbit", "Lion", "Cow"],
+        answer: ["A Rabbit", "A Lion", "A Cow"],
         correctIndex: 0,
     }, { //library[27]
         question: "Who was the quidditch commentator in Harry's first years at Hogwarts?",

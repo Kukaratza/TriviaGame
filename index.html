@@ -8,52 +8,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 </head>
 
 <body>
-
-   
-
-    <div>
-        <h1 id="title">Totally Trivia Game</h1>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="h1-reponsive mb-4 mt-2 blue-text font-bold text-center" id="title">Harry Potter Trivia.</h1>
+        </div>
     </div>
 
-    <div> Time Remaining:
-        <span id="timeR"></span>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-5" id="score1">Correct Answers:
+                <span id="correct"></span>
+            </div>
+            <div class="col-2 img-rounded" id="hollows">
+                <span id="timeR"></span>
+            </div>
+
+            <div class="col-5" id="score2">Incorrect Answers:
+                <span id="incorrect"></span>
+            </div>
+        </div>
     </div>
 
-    <div>Correct Answers:
-        <span id="correct"></span>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <span id="question"></span>
+            </div>
+        </div>
     </div>
-
-    <div>Incorrect Answers:
-        <span id="incorrect"></span>
-    </div>
-
-
-    <div>
-        <span id="question"></span>
-    </div>
-
 
     <!-- By adding a name caterogy to the radio buttons, it puts them 
             into the same group so ONLY 1 button can be clicked at the time-->
-    <div>
-        <input type="radio" id="answer1" value="answer1" index="0" name="gp1">
-        <label for="answer1"></label>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <input type="radio" id="answer1" value="answer1" index="0" name="gp1">
+                <label for="answer1"></label>
+            </div>
+            <div class="col-4">
+                <input type="radio" id="answer2" value="answer2" index="1" name="gp1">
+                <label for="answer2"></label>
+            </div>
+            <div class="col-4">
+                <input type="radio" id="answer3" value="answer3" index="2" name="gp1">
+                <label for="answer3"></label>
+            </div>
+        </div>
     </div>
-    <div>
-        <input type="radio" id="answer2" value="answer2" index="1" name="gp1">
-        <label for="answer2"></label>
-    </div>
-    <div>
-        <input type="radio" id="answer3" value="answer3" index="2" name="gp1">
-        <label for="answer3"></label>
-    </div>
-    <div>
-        <button type="reset" style="display: none;" value="Reset" id="reset">Reset</button>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col offset-5">
+                <button type="button" class="btn btn-danger" id="reset">Reset</button>
+            </div>
+        </div>
     </div>
 
 

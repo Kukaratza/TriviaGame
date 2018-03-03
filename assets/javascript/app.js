@@ -40,7 +40,7 @@ function stopWatch() {
             showButton();
             return;
         }
-        document.getElementById("timeR").innerHTML = count + " secs";
+        document.getElementById("timeR").innerHTML = count;
     }
 }
 

@@ -14,6 +14,7 @@ var clickAns = {
 var randQuestion;
 var correctAnswer = 0;
 var wrongAnswer = 0;
+var counter = 61;
 
 // Create a function that when page loads or Start Button gets clicked starts the game again.
 function startGame() {
@@ -24,11 +25,12 @@ function startGame() {
     $("#incorrect").text("0");
     correctAnswer = 0;
     wrongAnswer = 0;
+    count = 61;
 }
 
 // Create a timer that starts a 60 secs and goes down to zero. 
 function stopWatch() {
-    var count = 61;
+    count = 61;
     var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
     function timer() {
         count = count - 1;
@@ -49,18 +51,16 @@ function addQAs() {
     randQuestion = Math.floor(Math.random() * library.length); //this is a nuber, dont forget!
     console.log(randQuestion);
     $("#question").html(library[randQuestion].question);
-    $("#answer1").append(library[randQuestion].answer[0]);
-    $("#answer2").append(library[randQuestion].answer[1]);
-    $("#answer3").append(library[randQuestion].answer[2]);
+    $("#answer1_1").find('label').text(library[randQuestion].answer[0]);
+    $("#answer2_1").find('label').text(library[randQuestion].answer[1]);
+    $("#answer3_1").find('label').text(library[randQuestion].answer[2]);
 }
 
 // create an onClick event that uses the :checked selector url("https://api.jquery.com/checked-selector/"). 
 function enableClicks() {
-    $("input").on("click", function () {
-        $("#log").html($("input:checked").val() + " is checked!"); //sanity check, works!
-        // if (library.length === 30) return win()
-        //this will be pushed to an array of objects [] = [{key : clickedchioce, key : rightchoice}, {},  {}]
-        var foo = $("input:checked").attr("index");
+    $("button").on("click", function () {
+       $("#log").html($("input:checked").val() + " is checked!"); //sanity check, works!
+        var foo = $("input:selected").attr("index");
         clickAns.click = parseInt(foo);
         clickAns.right = library[randQuestion].correctIndex;
         library.splice(randQuestion, 1);
@@ -99,12 +99,18 @@ $("#reset").on("click", function () {
         startGame();
 });
 
-  
-
 // need to work on this.
 //    if ((correctAnswer + wrongAnswer) === 30) {
 //         alert("game over")
 //     };
+
+jQuery(':button').click(function () {
+    if (this.id == 'answer1') {
+        alert('Button 1 was clicked');
+    }
+  
+    
+});
 
 startGame();
 

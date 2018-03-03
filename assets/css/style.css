@@ -49,3 +49,12 @@
     font-size: 30px;
 }
 
+#reset {
+    width: 230px;
+    background-image: url("../images/clock.png");
+    margin-top: 100px;
+    background-size: cover;
+
+}
+
+

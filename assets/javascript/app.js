@@ -39,6 +39,8 @@ function stopWatch() {
             $('#answer3').off();
             showButton();
             stopTimer();
+            // element.style.display = 'block'; 
+          //  document.getElementById("timeR").innerHTML = "NICE";
         }
         document.getElementById("timeR").innerHTML = count;
     }
@@ -51,7 +53,7 @@ function stopTimer() {
 // create a function that randomizes and inserts QAs to the id questions and answers
 function addQAs() {
     randQuestion = Math.floor(Math.random() * library.length); //this is a nuber, dont forget!
-    console.log(randQuestion);
+    //console.log(randQuestion);
     $("#question").html(library[randQuestion].question);
     $("#answer1_1").find('label').text(library[randQuestion].answer[0]);
     $("#answer2_1").find('label').text(library[randQuestion].answer[1]);
@@ -107,14 +109,6 @@ $("#reset").on("click", function () {
 //    if ((correctAnswer + wrongAnswer) === 30) {
 //         alert("game over")
 //     };
-
-jQuery(':button').click(function () {
-    if (this.id == 'answer1') {
-        alert('Button 1 was clicked');
-    }
-
-
-});
 
 startGame();
 

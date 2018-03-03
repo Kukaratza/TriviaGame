@@ -101,7 +101,7 @@ var library = [
     }, { //library[25]
         question: "Which was the first broom that Harry received as a gift?",
         answer: ["Nimbus 2001", "CleanSweeper", "Nimbus 2000"],
-        correctIndexIndex: 2,
+        correctIndex: 2,
     }, { //library[26]
         question: "What patronus does Luna Lovegood has?",
         answer: ["A Rabbit", "A Lion", "A Cow"],

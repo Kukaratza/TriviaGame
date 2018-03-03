@@ -49,9 +49,9 @@ function addQAs() {
     randQuestion = Math.floor(Math.random() * library.length); //this is a nuber, dont forget!
     console.log(randQuestion);
     $("#question").html(library[randQuestion].question);
-    $("#answer1").html(library[randQuestion].answer[0]);
-    $("#answer2").html(library[randQuestion].answer[1]);
-    $("#answer3").html(library[randQuestion].answer[2]);
+    $("#answer1").append(library[randQuestion].answer[0]);
+    $("#answer2").append(library[randQuestion].answer[1]);
+    $("#answer3").append(library[randQuestion].answer[2]);
 }
 
 // create an onClick event that uses the :checked selector url("https://api.jquery.com/checked-selector/"). 
